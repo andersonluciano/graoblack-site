@@ -217,7 +217,7 @@ if ($_POST['name'] != "") {
                         </div>
 
                         <div class="form-group">
-                            <div class="g-recaptcha" data-sitekey="6LfwnA4UAAAAAFPCJyxKkdajKOImP1SB_UZgCrxE"></div>
+                            <div class="g-recaptcha" data-sitekey="6LcQiQ4UAAAAACNmQ9Lq7CD0jDKuMveMzSOXYQBN"></div>
                         </div>
 
                         <div>
