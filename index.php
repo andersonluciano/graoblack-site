@@ -1,37 +1,13 @@
 <?php
 
 if ($_POST['name'] != "") {
-
-    $curl = curl_init();
-
-    curl_setopt_array($curl, array(
-        CURLOPT_URL => "https://www.google.com/recaptcha/api/siteverify",
-        CURLOPT_RETURNTRANSFER => true,
-        CURLOPT_ENCODING => "",
-        CURLOPT_MAXREDIRS => 10,
-        CURLOPT_TIMEOUT => 30,
-        CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-        CURLOPT_CUSTOMREQUEST => "POST",
-        CURLOPT_POSTFIELDS => json_encode(array(
-            "response" => $_POST['g-recaptcha-response'],
-            "secret" => "6LfwnA4UAAAAAADqgkns2aYlsPcNEgTdHUEL7iBv",
-            "remoteip" => $_SERVER['REMOTE_ADDR']
-        )),
-        CURLOPT_HTTPHEADER => array(
-            "cache-control: no-cache",
-            "content-type: application/json",
-        ),
-    ));
-
-    $response = curl_exec($curl);
-    $err = curl_error($curl);
-
-    curl_close($curl);
-
-    if ($err) {
-        echo "cURL Error #:" . $err;
+    require("recaptcha/src/autoload.php");
+    $recap = new ReCaptcha\ReCaptcha('6LcQiQ4UAAAAACNmQ9Lq7CD0jDKuMveMzSOXYQBN');
+    $result = $recap->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
+    if ($result->isSuccess()) {
+        // verified!
     } else {
-        echo $response;
+	$errors = $result->getErrorCodes();
     }
 }
 ?>
@@ -217,7 +193,7 @@ if ($_POST['name'] != "") {
                         </div>
 
                         <div class="form-group">
-                            <div class="g-recaptcha" data-sitekey="6LcQiQ4UAAAAACNmQ9Lq7CD0jDKuMveMzSOXYQBN"></div>
+			    <div class="g-recaptcha" data-sitekey="6LcQiQ4UAAAAAE_npj-gQoVVevnX20svFHpv2MEo"></div>
                         </div>
 
                         <div>
