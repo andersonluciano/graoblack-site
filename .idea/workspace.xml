@@ -23,8 +23,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="219" column="107" lean-forward="false" selection-start-line="219" selection-start-column="107" selection-end-line="219" selection-end-column="107" />
+            <state relative-caret-position="206">
+              <caret line="115" column="81" lean-forward="false" selection-start-line="115" selection-start-column="81" selection-end-line="115" selection-end-column="81" />
               <folding />
             </state>
           </provider>
@@ -39,6 +39,7 @@
       <find>Incorrect email!</find>
       <find>Incorrect</find>
       <find>.js</find>
+      <find>Aces</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -115,12 +116,12 @@
       <option name="presentableId" value="Default" />
       <updated>1481395653713</updated>
       <workItem from="1481395655451" duration="1028000" />
-      <workItem from="1481579458290" duration="3033000" />
+      <workItem from="1481579458290" duration="3314000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4061000" />
+    <option name="totallyTimeSpent" value="4342000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="748" extended-state="6" />
@@ -248,8 +249,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="219" column="107" lean-forward="false" selection-start-line="219" selection-start-column="107" selection-end-line="219" selection-end-column="107" />
+        <state relative-caret-position="206">
+          <caret line="115" column="81" lean-forward="false" selection-start-line="115" selection-start-column="81" selection-end-line="115" selection-end-column="81" />
           <folding />
         </state>
       </provider>
